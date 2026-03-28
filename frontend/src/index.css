@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.4;
+  color: #1a1a1a;
+  background: #f5f5f5;
+}
+a {
+  color: #2563eb;
+}
+.app-header {
+  background: #1e293b;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+}
+.app-header nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+.app-header a {
+  color: #e2e8f0;
+  text-decoration: none;
+}
+.app-header a:hover {
+  text-decoration: underline;
+}
+.app-header a.active {
+  color: #fff;
+  font-weight: 600;
+}
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+h1 {
+  font-size: 1.35rem;
+  margin: 0 0 1rem;
+}
+.form-grid {
+  display: grid;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+  max-width: 420px;
+}
+.form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.875rem;
+}
+.form-grid input,
+.form-grid textarea {
+  padding: 0.4rem 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+}
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+button {
+  cursor: pointer;
+  padding: 0.45rem 0.85rem;
+  border-radius: 4px;
+  border: 1px solid #64748b;
+  background: #fff;
+}
+button.primary {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+}
+button.danger {
+  color: #b91c1c;
+  border-color: #fca5a5;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+.list li {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.list li strong {
+  display: block;
+}
+.muted {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+.error {
+  color: #b91c1c;
+  background: #fef2f2;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.loading {
+  color: #64748b;
+}
