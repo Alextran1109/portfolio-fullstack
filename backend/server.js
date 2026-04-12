@@ -5,6 +5,7 @@ const cors = require('cors');
 const createError = require('http-errors');
 const connectDB = require('./app/config/db');
 
+const authRoutes = require('./app/routes/authRoutes');
 const userRoutes = require('./app/routes/userRoutes');
 const projectRoutes = require('./app/routes/projectRoutes');
 const serviceRoutes = require('./app/routes/serviceRoutes');
@@ -21,6 +22,7 @@ app.get('/', (req, res) => {
   res.json({ success: true, message: 'Portfolio API', data: { version: '1.0.0' } });
 });
 
+app.use('/api', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/projects', projectRoutes);
 app.use('/api/services', serviceRoutes);

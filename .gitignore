@@ -5,3 +5,4 @@ build/
 *.log
 .DS_Store
 *.local
+frontend/cypress/reports/e2e-results.json

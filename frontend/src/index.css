@@ -33,6 +33,17 @@ a {
   color: #fff;
   font-weight: 600;
 }
+.app-header .header-link-btn {
+  background: transparent;
+  border: none;
+  color: #e2e8f0;
+  padding: 0;
+  font: inherit;
+  text-decoration: underline;
+}
+.app-header .header-link-btn:hover {
+  color: #fff;
+}
 main {
   max-width: 960px;
   margin: 0 auto;

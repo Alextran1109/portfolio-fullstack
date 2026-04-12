@@ -29,13 +29,14 @@ export default function CrudForm({
                 value={val}
                 required={htmlRequired}
                 onChange={(e) => onChange(f.name, e.target.value)}
+                data-cy={f.dataCy || `field-${f.name}`}
               />
             </label>
           );
         })}
       </div>
       <div className="form-actions">
-        <button type="submit" className="primary" disabled={saving}>
+        <button type="submit" className="primary" disabled={saving} data-cy="crud-submit">
           {editingId ? 'Update' : 'Create'}
         </button>
         {editingId && (
